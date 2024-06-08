@@ -29,6 +29,8 @@ body {
 #background-image {
   background-image: url(valentine-s-day-digital-art-with-romantic-couple\ \(1\).webp);
   background-size: cover;
+  width: 1920px;
+  height: 1080px;
   max-width: 100rem;
   z-index: -1;
 }
