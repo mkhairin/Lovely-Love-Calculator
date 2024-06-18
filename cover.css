@@ -85,4 +85,8 @@ body {
     height: 1080px;
 
   }
+
+  #playButton {
+    width: 100px;
+  }
 }

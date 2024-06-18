@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -123,7 +125,8 @@
                     <h3 class="float-md-start mb-0">Lovely</h3>
                     <nav class="nav nav-masthead justify-content-center float-md-end">
                         <a class="nav-link py-1 px-0 active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link py-1 px-0" href="https://www.linkedin.com/in/muhammad-khairin-b28ab0209/" target="_blank">About</a>
+                        <a class="nav-link py-1 px-0" href="https://www.linkedin.com/in/muhammad-khairin-b28ab0209/"
+                            target="_blank">About</a>
                         <a class="nav-link py-1 px-0" href="#">Contact</a>
                     </nav>
                 </div>
@@ -132,7 +135,10 @@
 
             <main class="px-3 mb-5">
                 <h1 class="">Love Calculator</h1>
-                <p class="col-md-8 mx-auto text-content overflow-hidden" id="paragraf">"Discover Your Love Compatibility! The Lovely Love Calculator offers a fun and clear look at your romantic potential. Enter your names to get a love percentage that highlights the strengths and areas for growth in your relationship. Perfect for couples wanting to explore their connection!"</p>
+                <p class="col-md-8 mx-auto text-content overflow-hidden" id="paragraf">"Discover Your Love
+                    Compatibility! The Lovely Love Calculator offers a fun and clear look at your romantic potential.
+                    Enter your names to get a love percentage that highlights the strengths and areas for growth in your
+                    relationship. Perfect for couples wanting to explore their connection!"</p>
                 <div class="love-calculator-wrapper col-sm-4 mt-5 mx-auto">
                     <div class="mb-3">
                         <input type="text" class="form-control" id="firstname" placeholder="Your Name">
@@ -151,7 +157,11 @@
             </main>
 
             <footer class="mt-auto text-white-50 d-flex justify-content-center flex-column">
-                <button type="button" class="btn btn-danger col-sm-1" id="playButton">Play Music</button>
+                <div class="brn-wrapper">
+                    <button type="button" class="btn btn-danger col-sm-1" id="playButton"><i class="bi bi-play-fill"></i></button>
+                    <button type="button" class="btn btn-danger col-sm-1" id="stopButton"><i class="bi bi-pause-fill"></i></button>
+                </div>
+
                 <p class="ml-3">Cover template for <a href="https://getbootstrap.com/" class="text-white">Lovely</a>, by
                     <a href="https://github.com/mkhairin" target="_blank" class="text-white">@mkhairin</a>.
                 </p>
@@ -167,6 +177,10 @@
         document.getElementById('playButton').addEventListener('click', function () {
             document.getElementById('myAudio').play();
         });
+
+        // document.getElementById('playButton').addEventListener('dblclick', function () {
+        //     document.getElementById('myAudio').
+        // })
     </script>
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
